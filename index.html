@@ -2,8 +2,54 @@
 <html>
   <head>
     <title>House of Prayer Choir</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <h1>House of Prayer Choir</h1>
+    <header class="lead text-light bg-dark p text-center">
+      House of Prayer Choir
+    </header>
+    <div class="container">
+      <section id="upcoming">
+        <div class="text-primary text-left p-1">Upcoming Performances</div>
+        <div class="grid-3 mx-1">
+          <div class="p-3 card">
+            <h3>Song #1</h3>
+          </div>
+          <div class="p-3 card">
+            <h3>Song #2</h3>
+          </div>
+          <div class="p-3 card">
+            <h3>Song #3</h3>
+          </div>
+        </div>
+      </section>
+      <section id="view-song" class="larger-card text-light">
+        <h1 class="lead">Song Title</h1>
+        <span>
+          <i class="fas fa-play p"></i>
+          <i class="fas fa-pause p"></i>
+        </span>
+        <div class="grid-2">
+          <div>
+            <h3>Listen as...</h3>
+            <select name="part">
+              <option value="soprano">Soprano</option>
+              <option value="alto">Alto</option>
+              <option value="tenor">Tenor</option>
+              <option value="bass">Bass</option>
+            </select>
+          </div>
+          <div>
+            <div class="card">View PDF</div>
+            <div class="card">View conductor's notes</div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
+  <script
+    src="https://kit.fontawesome.com/3753b9f2a4.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
