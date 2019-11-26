@@ -1,13 +1,22 @@
 import React, { Fragment } from 'react';
-import Cards from '../layout/cards/Cards';
+import Songs from '../layout/cards/Songs';
+import SongView from '../layout/SongView';
+import '../../App.css';
 
 const Scores = () => {
   return (
-    <Fragment className='container'>
-      <div className='mt-5 d-flex justify-content-left'>
+    <Fragment>
+      <div>
         <h3>Хоровые партитуры</h3>
       </div>
-      <Cards />
+      <div>
+        <div>
+          <Songs />
+        </div>
+        <div>
+          <SongView />
+        </div>
+      </div>
     </Fragment>
   );
 };

@@ -9,13 +9,11 @@ import Navigation from './components/layout/Navigation';
 function App() {
   return (
     <Router>
-      <div className='container'>
-        <h3 className='m-3 d-flex justify-content-center'>
-          <Link to='/' className='text-decoration-none'>
-            Церковный хор
-          </Link>
+      <div>
+        <h3>
+          <Link to='/'>Церковный хор</Link>
         </h3>
-        <h5 className='m-3 d-flex justify-content-center'>House of Prayer</h5>
+        <p>House of Prayer</p>
         <Navigation />
         <Switch>
           <Route exact path='/' component={Home} />
