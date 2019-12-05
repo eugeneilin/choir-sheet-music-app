@@ -1,11 +1,7 @@
 import React from 'react';
 
 const Home = () => {
-  return (
-    <div>
-      <h3>Добро пожаловать на ваш личный портал!</h3>
-    </div>
-  );
+  return <div>Welcome to House of Prayer Choir</div>;
 };
 
 export default Home;

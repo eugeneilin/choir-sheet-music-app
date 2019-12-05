@@ -1,25 +1,23 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/pages/Home';
-import Scores from './components/pages/Scores';
-import Navigation from './components/layout/Navigation';
+import UpcomingPerformances from './components/pages/UpcomingPerformances';
 
 function App() {
   return (
     <Router>
-      <div>
-        <h3>
-          <Link to='/'>Церковный хор</Link>
-        </h3>
-        <p>House of Prayer</p>
-        <Navigation />
+      <Fragment>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/scores' component={Scores} />
+          <Route
+            exact
+            path='/upcoming-performances'
+            component={UpcomingPerformances}
+          />
         </Switch>
-      </div>
+      </Fragment>
     </Router>
   );
 }
