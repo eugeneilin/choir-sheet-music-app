@@ -4,7 +4,7 @@ import Header from '../layout/Header';
 const UpcomingPerformances = () => {
   return (
     <Fragment>
-      <Header icon='fas fa-music' header='Upcoming Performances' />
+      <Header icon='fas fa-music' children='Upcoming Performances' />
       <div className='icons grid-3'>
         <div className='icon text-center p-1'>
           <i className='fas fa-bell'></i>
