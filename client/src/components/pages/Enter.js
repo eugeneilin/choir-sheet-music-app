@@ -5,20 +5,18 @@ import MainNav from '../layout/MainNav';
 import Login from '../layout/Login';
 import Register from '../layout/Register';
 
-const Enter = () => {
-  return (
-    <Fragment>
-      <MainNav />
-      {/* Body */}
-      <div className='container-fluid h-100 p-0'>
-        <div className='hero'>
-          <Register />
-          <Login />
-        </div>
+const Enter = () => (
+  <Fragment>
+    <MainNav />
+    {/* Body */}
+    <div className='container-fluid h-100 p-0'>
+      <div className='hero'>
+        <Register />
+        <Login />
       </div>
-      <Footer />
-    </Fragment>
-  );
-};
+    </div>
+    <Footer />
+  </Fragment>
+);
 
 export default Enter;
