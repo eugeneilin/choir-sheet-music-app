@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/pages/Home';
+import Enter from './components/pages/Enter';
 import UpcomingPerformances from './components/pages/UpcomingPerformances';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Fragment>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/enter' component={Enter} />
           <Route
             exact
             path='/upcoming-performances'
