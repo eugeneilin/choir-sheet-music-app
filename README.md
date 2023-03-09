@@ -1,2 +1,1 @@
-# choir-sheet-music-app
-https://houseofprayerchoir.eugeneilin.dev/
+# House of Prayer Choir App
